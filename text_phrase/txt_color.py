@@ -283,8 +283,8 @@ def print_colored_txt(sentence):
     for k, v in key_freq.items():
         print("{}: {}".format( KEY_FLAGS[k], v))
 
-file = "/Users/apple/code/gpy/text_phrase/resource/howToWriteReport.txt"
-html = "/Users/apple/code/gpy/text_phrase/out/howToWriteReport.html"
+file = "/Users/apple/code/gpy/text_phrase/resource/西游记.txt"
+html = "/Users/apple/code/gpy/text_phrase/out/西游记.html"
 head_html ="/Users/apple/code/gpy/text_phrase/head.html"
 
 def copy_file(src, dst):
