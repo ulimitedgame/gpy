@@ -1,0 +1,682 @@
+<head>
+<meta charset="utf-8"/><style type="text/css">body{font-family:"Nimbus Sans L",Helvetica,arial,"Lucida Grande","Lucida Sans Unicode", sans-serif;Line-height:1.3em;color:#555555;background-color:#F9F9F9;}
+
+main {margin:0;padding:0;color:#555555;clear:both;background-color:#FAFAFA;}
+
+.fayin {display:inline;}
+
+img.fayin {width:16px;height:16px;}
+
+img {border: 0; max-width:700px}
+img.img {width:1em;height:1em;margin-left:-4px;margin-bottom:-2px;} /*Chinese chara*/
+
+.h-g .top-g .h {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.id-g {display:inline;}
+.revout + .id-g, .z + .pv-g {display:block; margin-top:-10px}
+.ids-g {margin-bottom:10px;}
+.h-g .top-g .vs-g .v{
+    font-weight: bold;
+}
+span.arbd1, span.dhb, span.fm, span.unei, .ndv, .cl, .ei, .ndv  {font-weight:bold;padding-right:5px;}
+
+span.unsyn, span.unfm, .eb  {font-weight:bold;padding-right:5px;text-transform:uppercase;font-size:smaller; color:#C76E06;} 
+
+.ungi, .gi, .g  {color:purple; padding-right:5px;}
+
+.label-g .r  {color:green;}
+.dr-g {display:block;}
+ 
+/*词类*/
+.pos{
+	text-align: left;
+    font-weight: bold;
+}
+.pos-g .pos{
+    display: table-cell; 
+    margin: 0px auto 0px auto; 
+	background-color: #8f0610;
+	color: #FAFAFA;
+	text-transform:uppercase;
+	font-size:smaller;
+	padding: 1px 3px 1px 3px;
+	border-radius: 5px;
+}
+.pos-g .z, .pos-g img, .pos-g .symbols-small_coresym{display:none;}
+
+/*音标*/
+.phon-gb, .phon-us{
+ color: #004aac;
+}
+
+.z_phon-us{
+    color: #8f0610;
+    font-style: italic;
+    margin-right: .1em;
+}
+
+/*相关单词*/
+.alt{
+    font-weight: bold;
+}
+.alt[q="also"]{
+    display: block;
+}
+.z_a{
+    font-weight: normal;
+	padding-right:5px;
+}
+.z{
+    font-weight: normal;
+}
+/*词条释义*/
+.sd{
+    display: block;
+    margin-top: 8px;
+    font-size: 110%;
+    font-weight: bold;
+    color: #C76E06;
+    border-bottom: 1px solid #e8c49a;
+}
+.cf{
+    font-weight: bold;
+}
+.cf[display="block"]{
+    font-weight: bold;
+    display: block;
+}
+.cf .swung-dash{
+    margin-right: .4em;
+}
+.n-g{
+    display: block;
+}
+.z_n{
+display:table-cell;float:left;margin-right:5px;width:16px;height:16px;border-radius:10px;font-size:smaller;font-weight:bold;color:#FAFAFA;text-align:center;background:darkred;}   
+}
+
+.gr{
+    color: #004AAC; 
+}
+.x-g{
+    display: block; padding-left: 16px;
+}
+.x{color:teal;/*#1693A5;*/}
+
+.tx, chn{font-family: "Hiragino Sans GB W3", "冬青黑体简体中文 W3", "Hiragino Sans GB", "冬青黑体", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+}
+.tx{color: #666;}
+
+.label-g{
+    color: #004AAC;
+}
+.sense-g{
+	display:block;
+    color: #004AAC;
+}
+
+
+.pvs-g .z .revout, .ids-g .revout, .xr-g .revout{
+    display: table-cell; /* keep the background color wrapped tight */
+    margin: 5px auto 0px auto; /* keep the block centered */
+	position: relative;
+    bottom: 16px;
+	background-color: #C76E06;
+	color: #FAFAFA;
+	font-weight: bold;
+	text-transform:uppercase;
+	font-size:smaller;
+	padding: 1px 3px;
+	border-radius: 5px;
+}
+.pv, .id {font-weight: bold;}
+}
+.pvs-g, .pv-g, .sense-g, .d{
+    color: #000;
+}
+
+.def-g {padding-left:8px; color:#555555;}
+
+.pvs-g
+{margin:10px 5px;}
+
+/*see alse*/
+.xr-g[level="2"]{
+    display: block;
+    margin: 10px 24px;
+    padding: 5px 10px;
+    border: 1px solid #e8c49a;
+    border-radius: 5px;
+}
+.xr-g {
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    border: 1px solid #e8c49a;
+    border-radius: 5px;
+}
+.xr-g[xt="id"]{
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    border: 1px solid #e8c49a;
+    border-radius: 5px;
+}
+.xr-g[xt="id"] .revout{display:none;}
+
+.Ref{
+    font-weight: bold;
+    color: #004AAC;
+}
+
+/*单词类型*/
+.block-g { 
+    display: block
+	margin-bottom:16px;
+}
+
+/*IDIOMS and Phrase block*/
+.ids-g, .pvs-g
+{
+    display: block;
+	margin-top:14px;
+    padding: 10px 10px;
+    border: 1px solid #e8c49a;
+    border-radius: 5px;
+}
+.id{
+    font-weight: bold;
+}
+
+/*底部*/
+.pracpron {display:none;}
+
+/*.pracpron .wd{
+    font-weight: bold;
+}
+.pracpron .ei-g{
+    margin-left: .1em;
+}*/
+.infl{
+    display: block;
+}
+.infl .inflection{
+    margin-right: .4em;
+	font-weight:bold;
+}
+.para
+{
+    display:block;
+	padding-left: 16px;
+}
+
+img.Media{
+    float: right;
+    margin: 0 0 10px 10px;
+	clear:both
+}
+.wordbox /* rounded box for word famly */
+{
+	display:block;
+	float:right;
+	margin-left:18px;
+	margin-right:18px;
+	padding: 5px 16px;
+	border-radius: 10px;
+	border-color:#C76E06;
+	border-style:ridge;
+	clear:both;
+}
+.word /* title of word family */
+{
+    display: table-cell; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the block centered */
+    background-color: #C76E06;
+	color: #FAFAFA;
+	font-weight: bold;
+	text-transform:uppercase;
+	padding: 1px 3px;
+	border-radius: 5px;
+}
+.wf-g {display: block;}
+.wf-g .pos-g {display:inline;}
+.wf-g .pos {display:inline;}
+.wfw {display:inline;}
+
+.unbox 
+{
+display:block;
+padding-left:36px;
+}
+.tab 
+{
+    display: table-cell;
+	background-color: #C76E06;
+	color: #FAFAFA;
+	font-weight: bold;
+	text-transform:uppercase;
+	text-align: left;
+	padding: 1px 3px;
+	border-radius: 5px;
+}
+.title {display:block; font-weight:bold;text-transform:uppercase;
+	font-size:small;}
+.collsubhead
+{font-weight:bold;}
+
+.table {display:table; margin:12px 0 8px 0;}
+.tr {display:table-row;}
+.td {display:table-cell;margin-right:10px;}
+.th {
+    display: table-cell; 
+	color: #C76E06;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+
+ .althead /* title under Synonyms */
+{
+    font-weight: bold;
+	text-transform:uppercase;
+	font-size:small;
+	margin-top:14px;
+}
+.patterns /* rounded box for patterns */
+{
+	display:block;
+	margin-top:18px;
+	margin-left:-24px;
+	margin-right:18px;
+	border-radius: 10px;
+	border-color:#C76E06;
+	border-style:ridge;
+	clear:both;
+}
+
+.patterns .althead /* title of pattern */
+{
+    display: table-cell; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the block centered */
+    position: relative;
+    bottom: 10px;
+	left:20px;
+	background-color: #C76E06;
+	color: #FAFAFA;
+	font-weight: bold;
+	text-transform:uppercase;
+	padding: 1px 3px;
+	border-radius: 5px;
+}
+/* for phone only
+.patterns {width:320px;}
+.patterns .para {word-wrap:break-word;}
+*/
+.patterns .para {
+		 -ms-word-break: break-all;
+     word-break: break-all;
+     // Non standard for webkit
+     word-break: break-word;
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+.help {
+    display: block;
+}
+/*symbols class begin*/
+.symbols-coresym {
+    color:green;
+    display: inline-block;
+}
+.symbols-small_coresym {
+    color:green;
+    display: inline-block;
+    font-size: 70%;
+    position: relative;
+    top: -.1em;
+    margin-right: .15em;
+}
+.symbols-xsym{
+    color: rgb(180, 180, 180);
+    font-size: 55%;
+    top: -.25em;
+    position: relative;
+    margin-right: .25em;
+}
+.symbols-xrsym{
+    font-style: normal;
+    color: #555555;
+    margin-right: .25em;
+}
+.symbols-helpsym, .symbols-synsym, .symbols-awlsym, .symbols-oppsym, .symbols-etymsym, .symbols-notesym{
+    color: rgb(255, 255, 255);
+    background: rgb(183, 128, 50);
+    font-size: 65%;
+    padding: 1px 3px 2px;
+    display: inline-block;
+    margin: 0 .4em 0 0;
+    text-transform: uppercase;
+    top: -1px;
+    position: relative;
+    line-height: 1em;
+    border-radius: 1px;
+}
+.symbols-oppsym{
+    background: darkred;
+}
+.symbols-drsym{
+    font-style: normal;
+    font-size: 70%;
+    color: rgb(0, 0, 0);
+}
+.symbols-para_square{
+    color: rgb(80, 80, 80);
+    font-size: 65%;
+    position: relative;
+    top: -.2em;
+}
+.symbols-synsep{
+    color: rgb(80, 80, 80);
+    font-size: 65%;
+    position: relative;
+    top: -.2em;
+}
+.symbols-xsep{
+display:none;
+/*    color: rgb(90, 90, 90);
+    display: inline-block;
+    text-decoration: line-through; */
+}
+/*symbols class end*/
+ 
+/*单词隔开begin*/
+.def-g .d .dh, .def-g .d .ndv, .p-g .x-g .x .cl{
+    padding-right: 5px;
+    font-weight: bold;
+}
+.z_xr {padding-right:5px;}
+.unebi {padding-right:5px;font-weight: bold;}
+/*单词隔开end*/
+
+/*删除空格begin*/ 
+.gr + .def-g {margin-left:-5px;}
+/*删除空格end*/
+
+span#wx {text-decoration:line-through;}
+span#unwx {text-decoration:line-through;}
+
+/*
+.pv-g .swung-dash {color:#FAFAFA;}
+.pv-g .swung-dash::after {content: "~ "; color:#555555;}
+*/
+swung-dash {visibility: hidden;}
+swung-dash::after {visibility: visible;content: "\007E \0020";}
+
+.pv-g .swung-dash {visibility: hidden;}
+.pv-g .swung-dash::after {visibility: visible;content: "\007E \0020";}
+
+.infl {display:none;}
+
+
+
+a.lesson {font-size:120%; color: #1a237e; text-decoration: none; cursor: pointer; border-bottom: none;}
+a.lesson:hover {background-color: #e3f2fd}
+a.word {color: #1565c0; text-decoration: none; cursor: pointer; font-variant: normal; font-weight: normal; border-bottom: none;}
+a.word:hover {background-color: #e3f2fd;}
+a.invalid_word {color: #909497;}
+div.main {width: 100%; height: 100%;}
+div.left {width: 150px; overflow: auto; float: left; height: 100%;}
+div.right {overflow-y: auto; overflow-x: hidden; padding-left: 10px; height: 100%;}
+</style></head><html><body style="font-family:Arial Unicode MS;"><div class="left"><a class="lesson" href="#lesson_Words">Words</a><br/><a class="word" href="#word_apple">apple</a><br/><a class="word" href="#word_pear">pear</a><br/><br/></div><div class="main"><div class="right"><h1 id="lesson_Words" style="color:#FFFFFF; background-color:#003366; padding-left:20px; line-height:initial;">Words</h1><h2 id="word_apple" style="color:#CCFFFF; background-color:#336699; padding-left:20px; line-height:initial;">apple</h2><span alpha_id="000001530" amedited="seven" backup-class="a" class="entry" core="y" eid="apple_e" id="apple_e" idm_id="000001530" level="0" name="apple" random="y">
+<span class="h-g" level="1">
+<span class="top-g" level="2">
+<span class="h" core="y" level="3">apple</span>
+<span class="z">
+<span class="symbols-coresym">★</span>
+</span>
+<span class="ei-g" level="3" type="h_full_">
+<span class="z_ei-g">/</span>
+<span class="phon-gb" file="{gb}/a/ap/app/apple#_gb_1.spx" level="4" recdate="070503" wd="apple">ˈæpl</span>
+<a backup-class="Media" class="fayin" href="sound://uk/apple__gb_1.spx" resource="uk_pron" topic="a/app/apple/apple__gb_1.spx" type="sound"><img class="fayin" src="uk_pron.png"/></a>
+<span class="z">;
+          <span class="z_phon-us">NAmE</span>
+</span>
+<span class="phon-us" file="{gb}/a/ap/app/apple#_us_1.spx" level="4" recdate="070503" sup="y" wd="apple">ˈæpl</span>
+<a backup-class="Media" class="fayin" href="sound://us/apple__us_1.spx" resource="us_pron" topic="a/app/apple/apple__us_1.spx" type="sound"><img class="fayin" src="us_pron.png"/></a>
+<span class="z_ei-g">/</span>
+</span>
+<span class="block-g" display="block" level="3">
+<span class="pos-g" display="inline" level="4">
+<span class="pos" level="5" pos="n">noun</span>
+</span>
+<img alt="/pic/fruit_comp.jpg" height="540" onclick="this.style.display='none';this.nextSibling.nextSibling.style.display='block';" src="pic/fruit_comp.jpg" style="display:none;" width="720"/>
+<img alt="/thumb/apple.jpg" backup-height="540" backup-width="720" class="Media" onclick="this.style.display='none';this.previousSibling.previousSibling.style.display='block';" resource="pic" src="thumb/apple.jpg" thumb="apple.jpg" thumb_resource="thumb" topic="fruit_comp.htm" type="image"/>
+<span class="clear"></span>
+</span>
+</span>
+<span class="def-g" level="2">
+<span class="d" level="3" ox3k="y" status="6" tranidoupc="1">a round fruit with shiny red or green skin and firm white flesh
+        <span class="chn" level="4" localeuidoupc="201" status="6">苹果</span>
+</span>
+</span>
+<span class="x-g" eid="apple_xg_1" id="apple_xg_1" level="2">
+<span class="symbols-xsym">◆</span>
+<span class="x" level="3" partial="y" record="n" status="6" tranidoupc="2">an apple pie</span>
+<span class="tx" level="3" localeuidoupc="201" status="6">苹果馅饼</span>
+</span>
+<span class="x-g" eid="apple_xg_2" id="apple_xg_2" level="2">
+<span class="symbols-xsym">◆</span>
+<span class="x" level="3" partial="y" record="n" status="6" tranidoupc="3">apple sauce</span>
+<span class="tx" level="3" localeuidoupc="201" status="6">苹果沙司</span>
+</span>
+<span class="x-g" eid="apple_xg_3" id="apple_xg_3" level="2">
+<span class="symbols-xsym">◆</span>
+<span class="x" level="3" partial="y" record="n" status="6" tranidoupc="4">a garden with three apple trees</span>
+<span class="tx" level="3" localeuidoupc="201" status="6">有三棵苹果树的花园</span>
+</span>
+<span class="xr-g" level="2" xt="see">
+<span class="symbols-xrsym">☞</span>see also
+      <span class="xr" eid="apple_xr_1" href="adamsapple_e" id="apple_xr_1" level="3" pos="n" xt="see">
+<span class="Ref" fk="XXX" topic="adamsapple_e">
+<span class="xh" level="4">
+<a href="entry://Adam's apple">Adam's apple</a>
+</span>
+</span>
+</span>
+<span class="z">,</span>
+<span class="xr" eid="apple_xr_2" href="bigapple_e" id="apple_xr_2" level="3" pos="n" xt="see">
+<span class="Ref" fk="XXX" topic="bigapple_e">
+<span class="xh" level="4">
+<a href="entry://Big Apple">Big Apple</a>
+</span>
+</span>
+</span>
+<span class="z">,</span>
+<span class="xr" eid="apple_xr_3" href="cookingapple_e" id="apple_xr_3" level="3" pos="n" xt="see">
+<span class="Ref" fk="XXX" topic="cookingapple_e">
+<span class="xh" level="4">
+<a href="entry://cooking apple">cooking apple</a>
+</span>
+</span>
+</span>
+<span class="z">,</span>
+<span class="xr" eid="apple_xr_4" href="crabapple_e" id="apple_xr_4" level="3" pos="n" xt="see">
+<span class="Ref" fk="XXX" topic="crabapple_e">
+<span class="xh" level="4">
+<a href="entry://crab apple">crab apple</a>
+</span>
+</span>
+</span>
+<span class="z">,</span>
+<span class="xr" eid="apple_xr_5" href="eatingapple_e" id="apple_xr_5" level="3" pos="n" xt="see">
+<span class="Ref" fk="XXX" topic="eatingapple_e">
+<span class="xh" level="4">
+<a href="entry://eating apple">eating apple</a>
+</span>
+</span>
+</span>
+<span class="z">,</span>
+<span class="xr" eid="apple_xr_6" href="toffeeapple_e" id="apple_xr_6" level="3" pos="n" xt="see">
+<span class="Ref" fk="XXX" topic="toffeeapple_e">
+<span class="xh" level="4">
+<a href="entry://toffee apple">toffee apple</a>
+</span>
+</span>
+</span>
+</span>
+<span class="ids-g" level="2">
+<span class="revout">IDIOMS</span>
+<span class="id-g" eid="apple_idg_1" id="apple_idg_1" level="3" new="seven">
+<span class="id" eid="apple_id_1" id="apple_id_1" level="4">the apple doesn't fall/never falls far from the ˈtree</span>
+<span class="sense-g">
+<span class="def-g" level="4">
+<span class="label-g" display="inline" level="5">(
+              <span class="r" level="6" r="saying">saying</span>) (
+              <span class="g" g="espam" level="6">especially NAmE</span>)
+            </span>
+<span class="d" level="5" status="6" tranidoupc="5">a child usually behaves in a similar way to his or her parent(s)
+              <span class="chn" level="6" localeuidoupc="201" status="6">有什么样的父母就有什么样的儿女；上行下效</span>
+</span>
+</span>
+</span>
+</span>
+<span class="id-g" eid="apple_idg_2" id="apple_idg_2" level="3" zp="y">
+<span class="id" eid="apple_id_2" id="apple_id_2" level="4">the ˌapple of sb's ˈeye</span>
+<span class="sense-g">
+<span class="def-g" level="4">
+<span class="d" level="5" status="6" tranidoupc="6">a person or thing that is loved more than any other
+              <span class="chn" level="6" localeuidoupc="201" status="6">心肝宝贝；掌上明珠</span>
+</span>
+</span>
+</span>
+</span>
+<span class="id-g" eid="apple_idg_3" id="apple_idg_3" level="3" new="seven" zp="y">
+<span class="id" eid="apple_id_3" id="apple_id_3" level="4">ˌapples and ˈoranges</span>
+<span class="sense-g">
+<span class="def-g" level="4">
+<span class="label-g" display="inline" level="5">(
+              <span class="g" g="am" level="6">NAmE</span>)
+            </span>
+<span class="ud" level="5" status="6" tranidoupc="7">used to describe a situation in which two people or things are completely different from each other
+              <span class="chn" level="6" localeuidoupc="201" status="6">苹果橘子两码事；截然不同</span>
+</span>
+</span>
+<span class="x-g" eid="apple_xg_4" id="apple_xg_4" level="4">
+<span class="symbols-xsym">◆</span>
+<span class="x" level="5" status="6" tranidoupc="8">They really are apples and oranges.</span>
+<span class="tx" level="5" localeuidoupc="201" status="6">他们确实是迥然不同。</span>
+</span>
+<span class="x-g" eid="apple_xg_5" id="apple_xg_5" level="4">
+<span class="symbols-xsym">◆</span>
+<span class="x" level="5" new="eight" status="6" tranidoupc="13">They are both great but
+              <span class="cl" level="6">you can't compare apples and oranges.</span>
+</span>
+<span class="tx" level="5" localeuidoupc="201" status="6">他们俩都很棒，但是截然不同，无法比较。</span>
+</span>
+</span>
+</span>
+</span>
+<span class="xr-g" level="2" xt="id_also">
+<span class="symbols-xrsym">☞</span>more at
+      <span class="xr" eid="apple_xr_7" href="american_e" id="apple_xr_7" level="3" pos="n" subref="american_9" webref="american_pos_adj_e" xt="id">
+<span class="xh" level="4">American</span>
+<span class="z"> </span>
+<span class="xp" level="4">adj.</span>
+</span>
+<span class="z">,</span>
+<span class="xr" eid="apple_xr_8" href="rotten_e" id="apple_xr_8" level="3" pos="n" subref="rotten_24" webref="rotten_pos_adj_e" xt="id">
+<span bookmark="rotten_24" class="Ref" fk="XXX" topic="rotten_e">
+<span class="xh" level="4">
+<a href="entry://rotten adj.">rotten adj.</a>
+</span>
+</span>
+</span>
+</span>
+<span class="infl" level="2">
+<span class="inflection" level="3">apple</span>
+<span class="inflection" level="3">apples</span>
+</span>
+</span>
+<span class="pracpron">
+<span class="pron-g">
+<span class="wd" type="h">apple</span>
+<span class="ei-g" level="3" type="h_full_">
+<span class="z_ei-g">/</span>
+<span class="phon-gb" file="{gb}/a/ap/app/apple#_gb_1.spx" level="4" recdate="070503" wd="apple">ˈæpl</span>
+<a backup-class="Media" class="fayin" href="sound://uk/apple__gb_1.spx" resource="uk_pron" topic="a/app/apple/apple__gb_1.spx" type="sound"><img class="fayin" src="uk_pron.png"/></a>
+<span class="z">;
+          <span class="z_phon-us">NAmE</span>
+</span>
+<span class="phon-us" file="{gb}/a/ap/app/apple#_us_1.spx" level="4" recdate="070503" sup="y" wd="apple">ˈæpl</span>
+<a backup-class="Media" class="fayin" href="sound://us/apple__us_1.spx" resource="us_pron" topic="a/app/apple/apple__us_1.spx" type="sound"><img class="fayin" src="us_pron.png"/></a>
+<span class="z_ei-g">/</span>
+</span>
+</span>
+</span>
+</span><h2 id="word_pear" style="color:#CCFFFF; background-color:#336699; padding-left:20px; line-height:initial;">pear</h2><span alpha_id="000026645" backup-class="p" class="entry" eid="pear_e" id="pear_e" idm_id="000026645" level="0" name="pear">
+<span class="h-g" level="1">
+<span class="top-g" level="2">
+<span class="h" level="3">pear</span>
+<span class="ei-g" level="3" type="h_full_">
+<span class="z_ei-g">/</span>
+<span class="phon-gb" file="{gb}/p/pe/pea/pear#_gb_1.spx" level="4" recdate="070605" wd="pear">peə(r)</span>
+<a backup-class="Media" class="fayin" href="sound://uk/pear__gb_1.spx" resource="uk_pron" topic="p/pea/pear_/pear__gb_1.spx" type="sound"><img class="fayin" src="uk_pron.png"/></a>
+<span class="z">;
+          <span class="z_phon-us">NAmE</span>
+</span>
+<span class="phon-us" file="{gb}/p/pe/pea/pear#_us_1.spx" level="4" recdate="070605" wd="pear">per</span>
+<a backup-class="Media" class="fayin" href="sound://us/pear__us_1.spx" resource="us_pron" topic="p/pea/pear_/pear__us_1.spx" type="sound"><img class="fayin" src="us_pron.png"/></a>
+<span class="z_ei-g">/</span>
+</span>
+<span class="block-g" display="block" level="3">
+<span class="pos-g" display="inline" level="4">
+<span class="pos" level="5" pos="n">noun</span>
+</span>
+</span>
+</span>
+<span class="def-g" level="2">
+<span class="d" level="3" status="6" tranidoupc="1">a yellow or green fruit that is narrow at the top and wide at the bottom
+        <span class="chn" level="4" localeuidoupc="201" status="6">梨</span>
+</span>
+</span>
+<span class="x-g" eid="pear_xg_1" id="pear_xg_1" level="2">
+<span class="symbols-xsym">◆</span>
+<span class="x" level="3" partial="y" record="n" status="6" tranidoupc="2">a pear tree</span>
+<span class="tx" level="3" localeuidoupc="201" status="6">梨树</span>
+</span>
+<span class="xr-g" level="2" xt="see">
+<span class="symbols-xrsym">☞</span>see also
+      <span class="xr" eid="pear_xr_1" href="pricklypear_e" id="pear_xr_1" level="3" pos="n" xt="see">
+<span class="Ref" fk="XXX" topic="pricklypear_e">
+<span class="xh" level="4">
+<a href="entry://prickly pear">prickly pear</a>
+</span>
+</span>
+</span>
+</span>
+<span class="infl" level="2">
+<span class="inflection" level="3">pear</span>
+<span class="inflection" level="3">pears</span>
+</span>
+</span>
+<span class="pracpron">
+<span class="pron-g">
+<span class="wd" type="h">pear</span>
+<span class="ei-g" level="3" type="h_full_">
+<span class="z_ei-g">/</span>
+<span class="phon-gb" file="{gb}/p/pe/pea/pear#_gb_1.spx" level="4" recdate="070605" wd="pear">peə(r)</span>
+<a backup-class="Media" class="fayin" href="sound://uk/pear__gb_1.spx" resource="uk_pron" topic="p/pea/pear_/pear__gb_1.spx" type="sound"><img class="fayin" src="uk_pron.png"/></a>
+<span class="z">;
+          <span class="z_phon-us">NAmE</span>
+</span>
+<span class="phon-us" file="{gb}/p/pe/pea/pear#_us_1.spx" level="4" recdate="070605" wd="pear">per</span>
+<a backup-class="Media" class="fayin" href="sound://us/pear__us_1.spx" resource="us_pron" topic="p/pea/pear_/pear__us_1.spx" type="sound"><img class="fayin" src="us_pron.png"/></a>
+<span class="z_ei-g">/</span>
+</span>
+</span>
+</span>
+</span></div></div></body></html>
